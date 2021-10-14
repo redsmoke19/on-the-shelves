@@ -1,0 +1,11 @@
+nav.nav
+  ul.nav__list
+    li.nav__item
+      a.nav__link(class=pageClass !== "index-page" ? false : "nav__link--active" href=pageClass === "index-page" ? false : "index.html") Главная
+    li.nav__item
+      a.nav__link(class=pageClass !== "catalog-page" ? false : "nav__link--active" href=pageClass === "catalog-page" ? false : "catalog.html") Каталог книг
+    li.nav__item
+      a.nav__link(class=pageClass !== "pay-delivery-page" ? false : "nav__link--active" href=pageClass === "pay-delivery-page" ? false : "#") Оплата и доставка
+    li.nav__item
+      a.nav__link(class=pageClass !== "contacts-page" ? false : "nav__link--active" href=pageClass === "contacts-page" ? false : "#") Контакты
+  include /dev/pug/modules/user-nav/user-nav
