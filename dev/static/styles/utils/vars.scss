@@ -2,12 +2,13 @@
 $white: #ffffff;
 $black: #000000;
 $blue-color: #3971ff;
-$light-black-color: #151515;
+$grey-color: #f6f6f6;
 $light-grey-color: #bfbfbf;
-$yellow-color: #ffd84e;
-$yellow-light-color: #ffe483;
-$text-gray-color: #b6b6b6;
-$red-color: #ff5151;
+$light-blue-color: #98b5ff;
+$light-orange-color: #fe872e;
+$light-red-color: #ff9292;
+$orange-color: #ff7d02;
+$red-color: #ff7171;
 $text-color: #37393e;
 
 // Sizes
@@ -16,5 +17,6 @@ $base-font-size: 16px;
 $content: 1300px;
 
 // Fonts
-$main-font: "Golos", "Arial", sans-serif;
-$decor-font: "Caveat", "Arial", sans-serif;
+$main-font: "PTSansAstra", "Arial", sans-serif;
+$second-font: "Golos", "Arial", sans-serif;
+$decor-font: "Podkova", "Arial", sans-serif;

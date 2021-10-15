@@ -5,10 +5,15 @@
 .header__wrapper {
   align-items: center;
   display: flex;
-  padding: 23px 0 22px;
+  padding: 24px 0 14px;
 }
 
 .header__logo-link {
   display: block;
   margin: 0 37px 0 0;
+}
+
+.header__address {
+  line-height: 18px;
+  margin: -10px 0 0 0;
 }
