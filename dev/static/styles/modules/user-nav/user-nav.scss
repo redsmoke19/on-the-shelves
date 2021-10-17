@@ -19,11 +19,13 @@
   padding: 1px 10px;
   text-decoration: none;
   transition: all ease-out 0.15s;
+
   &:hover,
   &:focus {
     background-color: $grey-color;
     border-color: $grey-color;
     outline: none;
+
     .user-nav__icon {
       stroke: $blue-color;
     }
@@ -33,6 +35,7 @@
 .user-nav__link--transparent {
   background-color: transparent;
   color: $white;
+
   &:hover,
   &:focus {
     color: $blue-color;
@@ -43,6 +46,7 @@
   background-color: $red-color;
   border-color: $red-color;
   color: $white;
+
   &:hover,
   &:focus {
     background-color: $light-red-color;

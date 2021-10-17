@@ -1,0 +1,18 @@
+include /dev/pug/modules/reviews/reviews-data
+
+section.reviews
+  .container
+    h2.reviews__title.section__title Отзывы
+    ul.reviews__list
+      each review in reviews
+        li.reviews__item
+          .reviews__wrapper
+            .reviews__info
+              img.reviews__img(src= review.photo alt="Фото автора отзыва" width="80" height="80")
+              .reviews__box
+                h3.reviews__name= review.name
+                if review.gender === "male"
+                  p.reviews__count Купил #{review.booksCount} книг
+                else if review.gender === "female"
+                  p.reviews__count Купила #{review.booksCount} книг
+            p.reviews__review= review.review

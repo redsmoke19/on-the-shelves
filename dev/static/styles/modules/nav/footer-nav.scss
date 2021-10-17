@@ -1,0 +1,44 @@
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav__item {
+  &:not(:last-child) {
+    margin: 0 68px 0 0;
+  }
+}
+
+.footer-nav__title {
+  color: $light-black-color;
+  font-family: $decor-font;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.footer-nav__link {
+  color: $white;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+
+  &:not([href]) {
+    cursor: default;
+  }
+
+  &[href]:hover {
+    opacity: 0.7;
+  }
+
+  &[href]:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+}
+
+.footer-nav__text {
+  color: $white;
+  line-height: 18px;
+  margin: 0 0 5px 0;
+}
