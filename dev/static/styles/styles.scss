@@ -97,10 +97,11 @@ section {
 }
 
 .section__title {
+  font-family: $decor-font;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
-  margin: 0 0 45px 0;
+  font-weight: 500;
+  line-height: 53px;
+  margin: 0 0 40px 0;
 }
 
 @import "modules/modules";
