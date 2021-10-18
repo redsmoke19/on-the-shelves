@@ -1,0 +1,104 @@
+.book {
+  margin: 19px 0 0 0;
+}
+
+.book__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__picture {
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  flex: 0 0 auto;
+  max-width: 485px;
+  overflow: hidden;
+}
+
+.book__inner {
+  flex: 0 0 54.58%;
+  padding: 31px 0 0 0;
+}
+
+.book__top {
+  border-bottom: 1px solid $light-grey-color;
+  margin: 0 0 15px 0;
+  padding: 0 0 30px 0;
+}
+
+.book__line {
+  display: flex;
+  padding: 0 0 0 2px;
+}
+
+.book__star-icon {
+  fill: $blue-color;
+  margin: 0 2px 0 0;
+  stroke: $blue-color;
+}
+
+.book__star {
+  color: $blue-color;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 5px 0 0;
+}
+
+.book__grade {
+  color: $light-grey-color;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.book__title {
+  font-family: $decor-font;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 0 0 5px 0;
+}
+
+.book__author {
+  color: $blue-color;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.book__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__information {
+  flex: 0 0 40%;
+}
+
+.book__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 11px 0;
+}
+
+.book__info-item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin: 0 0 2px 0;
+  }
+}
+
+.book__term {
+  color: $light-grey-color;
+  line-height: 21px;
+  min-width: 130px;
+  max-width: 130px;
+}
+
+.book__annotation {
+  flex: 0 0 57%;
+}
+
+.book__text {
+  line-height: 21px;
+}

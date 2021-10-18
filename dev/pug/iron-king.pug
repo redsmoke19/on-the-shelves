@@ -1,0 +1,11 @@
+extends /dev/pug/layout/main
+
+block variables
+  - var title = "Книга Железный кароль"
+  - var pageClass = "book-page"
+  - var userLogin = true
+
+block content
+  main(class=pageClass)
+    include /dev/pug/modules/breadcrumbs/breadcrumbs
+    include /dev/pug/pages/book/book

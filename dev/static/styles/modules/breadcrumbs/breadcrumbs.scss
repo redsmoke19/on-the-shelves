@@ -25,6 +25,18 @@
   }
 }
 
+.breadcrumbs__link--slash {
+  position: relative;
+
+  &::before {
+    content: "/";
+    color: $text-color;
+    position: absolute;
+    left: -12px;
+    text-decoration: none;
+  }
+}
+
 .breadcrumbs__text {
   font-size: 14px;
   line-height: 16px;

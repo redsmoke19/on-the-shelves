@@ -106,7 +106,11 @@ section {
 }
 
 .catalog-page {
-  padding-top: 61px;
+  padding: 61px 0 0 0;
+}
+
+.book-page {
+  padding: 21px 0 0 0;
 }
 
 @import "modules/modules";
