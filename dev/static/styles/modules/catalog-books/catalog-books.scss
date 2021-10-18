@@ -1,0 +1,58 @@
+.catalog-books {
+  flex: 0 0 77.38%;
+  position: relative;
+}
+
+.catalog-books .books {
+  margin: -20px -10px 0;
+}
+
+.catalog-books .books__item {
+  padding: 20px 10px 0;
+}
+
+.catalog-books .books__name {
+  line-height: 23px;
+}
+
+.catalog-books .books__author {
+  margin: 0 0 5px 0;
+}
+
+.catalog-books .books__stars {
+  left: 4px;
+  top: 5px;
+}
+
+.catalog-books__sort {
+  position: absolute;
+  top: -40px;
+  right: 4px;
+}
+
+.catalog-books__sort-title {
+  display: inline-block;
+  line-height: 21px;
+}
+
+.catalog-books__select {
+  appearance: none;
+  background: transparent url("../images/common/arrow.svg") no-repeat right center;
+  border: none;
+  color: $blue-color;
+  cursor: pointer;
+  line-height: 21px;
+  outline: none;
+  padding: 0 15px 0 7px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+
+  &:focus-within {
+    opacity: 0.7;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

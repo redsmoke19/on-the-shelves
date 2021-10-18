@@ -1,0 +1,8 @@
+section.catalog
+  .container
+    h1.catalog__title Каталог книг
+    .catalog__wrapper
+      include /dev/pug/modules/catalog/catalog-filter
+      include /dev/pug/modules/catalog/catalog-books
+    .catalog__pagination.pagination
+      +pagination(4,1,arrows)

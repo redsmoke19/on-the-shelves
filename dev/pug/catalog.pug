@@ -1,0 +1,11 @@
+extends /dev/pug/layout/main
+
+block variables
+  - var title = "Каталог книг"
+  - var pageClass = "catalog-page"
+  - var userLogin = false
+
+block content
+  main(class=pageClass)
+    include /dev/pug/modules/breadcrumbs/breadcrumbs
+    include /dev/pug/modules/catalog/catalog

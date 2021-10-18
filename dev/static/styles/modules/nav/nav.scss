@@ -24,11 +24,20 @@
 .nav__link {
   color: $white;
   line-height: 19px;
+  position: relative;
   text-decoration: none;
   transition: all ease-out 0.15s;
 
   &--active {
-    text-decoration: underline;
+    &::after {
+      background-color: $white;
+      bottom: -2px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
   }
 
   &:not([href]) {

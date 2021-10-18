@@ -1,0 +1,9 @@
+.catalog-books
+  .catalog-books__sort
+    label.catalog-books__sort-title(for="sort") Сортировать:
+    select.catalog-books__select(size="1" id="sort")
+      option.catalog-books__options по популярности
+      option.catalog-books__options по названию
+      option.catalog-books__options по новизне
+  include /dev/pug/modules/catalog/catalog-data
+  include /dev/pug/modules/books-layout/books-layout

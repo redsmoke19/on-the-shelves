@@ -27,10 +27,11 @@
 }
 
 .books__box {
+  background-color: $white;
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 18px 15px 25px;
+  padding: 18px 16px 25px 15px;
 }
 
 .books__author {

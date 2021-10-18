@@ -1,0 +1,36 @@
+mixin input(type,id,name,title,checked)
+  if type === "checkbox"
+    .catalog-filter__box
+      input.catalog-filter__checkbox(type= type id= id name= name checked=checked)
+      label.catalog-filter__label(for= id) #{title}
+  if type === "radio"
+    .catalog-filter__box.catalog-filter__box--radio
+      input.catalog-filter__radio(type= type id= id name= name value= id checked=checked)
+      label.catalog-filter__label(for= id) #{title}
+
+.catalog-filter
+  form.catalog-filter__form
+    fieldset.catalog-filter__fieldset
+      p.catalog-filter__legend Категория
+      +input("checkbox", "fiction", "fiction", "Художественная литература")
+      +input("checkbox", "for-children", "for-children", "Книги для детей")
+      +input("checkbox", "education", "education", "Образование", true)
+      +input("checkbox", "science-and-technology", "science-and-technology", "Наука и техника")
+      +input("checkbox", "society", "society", "Общество")
+      +input("checkbox", "business-literature", "business-literature", "Деловая литература")
+      +input("checkbox", "health", "health", "Здоровье")
+      +input("checkbox", "hobby", "hobby", "Увлечения", true)
+      +input("checkbox", "psychology", "psychology", "Психология")
+      +input("checkbox", "esoterics", "esoterics", "Эзотерика")
+      +input("checkbox", "philosophy", "philosophy", "Философия и религия")
+      +input("checkbox", "art", "art", "Искусство", true)
+    fieldset.catalog-filter__fieldset
+      p.catalog-filter__legend Статус
+      +input("radio", "bestsellers", "status", "Хиты продаж")
+      +input("radio", "news-books", "status", "Новинки", true)
+      +input("radio", "preorder", "status", "Предзаказ")
+    fieldset.catalog-filter__fieldset
+      p.catalog-filter__legend Наличие
+      +input("radio", "in-the-shop", "availability", "В магазине")
+      +input("radio", "in-the-internet-shop", "availability", "В интернет-магазине", true)
+      +input("radio", "under-the-order", "availability", "Под заказ")

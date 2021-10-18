@@ -1,0 +1,13 @@
+mixin breadcrumbs-item(text,href)
+  li.breadcrumbs__item
+    if(href)
+      a.breadcrumbs__link(href=href) #{text}
+    else
+      span.breadcrumbs__text #{text}
+
+section.breadcrumbs
+  .container
+    ul.breadcrumbs__list
+      if pageClass === 'catalog-page'
+        +breadcrumbs-item('Главная страница','index.html')
+        +breadcrumbs-item('Каталог книг')

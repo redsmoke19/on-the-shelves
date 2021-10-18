@@ -1,0 +1,17 @@
+.catalog {
+  padding: 0 0 90px 0;
+}
+
+.catalog__title {
+  font-family: $decor-font;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 8px 0 38px 0;
+}
+
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 48px 0;
+}

@@ -6,9 +6,11 @@
 
 .pagination__link {
   align-items: center;
-  // color: $text-gray-color;
+  color: $light-grey-color;
   display: flex;
+  font-family: $second-font;
   justify-content: center;
+  line-height: 24px;
   height: 26px;
   text-decoration: none;
   transition: all ease-out 0.15s;
@@ -19,7 +21,7 @@
   }
 
   &--active {
-    // border: 2px solid $yellow-color;
+    border: 2px solid $blue-color;
     border-radius: 2px;
     color: $text-color;
     cursor: default;
