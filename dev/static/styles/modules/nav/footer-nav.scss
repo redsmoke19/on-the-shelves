@@ -1,8 +1,11 @@
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-nav__item {
+  max-width: 220px;
+
   &:not(:last-child) {
     margin: 0 68px 0 0;
   }

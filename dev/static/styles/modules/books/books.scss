@@ -18,6 +18,11 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  transition: all ease-out 0.2s;
+
+  &:hover {
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.07);
+  }
 }
 
 .books__img {
@@ -89,7 +94,7 @@
   transition: all ease-out 0.15s;
 
   &:hover {
-    opacity: 0.7;
+    background-color: $hover-color;
   }
 }
 

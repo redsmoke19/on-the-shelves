@@ -3,7 +3,8 @@ ul.reviews__list
     li.reviews__item
       .reviews__wrapper
         .reviews__info
-          img.reviews__img(src= item.photo alt="Фото автора отзыва" width="80" height="80")
+          .reviews__box-images
+            img.reviews__img(src= item.photo alt="Фото автора отзыва" width="80" height="80")
           .reviews__box
             h3.reviews__name= item.name
             if item.gender === "male"

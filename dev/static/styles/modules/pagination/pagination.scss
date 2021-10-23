@@ -27,3 +27,17 @@
     cursor: default;
   }
 }
+
+.pagination__link--arrow {
+  svg {
+    fill: $light-grey-color;
+  }
+
+  &[href]:hover {
+    opacity: 1;
+
+    svg {
+      fill: $blue-color;
+    }
+  }
+}
