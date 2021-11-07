@@ -1,11 +1,12 @@
 .footer {
-  background-color: $text-color;
   flex: 0 0 auto;
+  background-color: $text-color;
 }
 
 .footer__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 225px;
   padding: 48px 0 43px;
 }
 
@@ -21,11 +22,11 @@
 }
 
 .footer__copyright {
+  padding: 13px 0;
   background-color: $dark-black-color;
   color: $light-black-color;
-  font-family: $second-font;
   font-size: 12px;
+  font-family: $second-font;
   line-height: 14px;
-  padding: 13px 0;
   text-align: center;
 }

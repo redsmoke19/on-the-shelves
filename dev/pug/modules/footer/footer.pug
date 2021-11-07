@@ -1,6 +1,6 @@
 mixin footer-nav(title)
   li.footer-nav__item
-    h4.footer-nav__title= title
+    h4.footer-nav__title&attributes(attributes)= title
     block
 
 mixin footer-sub-nav(name, link, page, text)
@@ -87,7 +87,7 @@ footer.footer
               +footer-sub-nav("Сертификаты", "#", "certificates-page")
               +footer-sub-nav("Предзаказы", "#", "preorder-page")
               +footer-sub-nav("Конкурсы", "#", "gift-page")
-          +footer-nav("Адрес")
+          +footer-nav("Адрес").footer-nav__title--more
             ul.footer-nav__sub-list
               +footer-sub-nav("", "", "", "г. Санкт-Петербург,<br> наб. Pеки Карповки, 5 корпус П")
               +footer-sub-nav("+7 800 555 86 28", "tel:+78005558628", "")

@@ -1,5 +1,6 @@
 .user-nav {
   display: flex;
+  margin: 0 0 0 auto;
 }
 
 .user-nav__item {
@@ -9,21 +10,21 @@
 }
 
 .user-nav__link {
+  display: flex;
   align-items: center;
-  background-color: $white;
+  padding: 1px 10px;
   border: 1px solid $white;
   border-radius: 2px;
+  background-color: $white;
   color: $blue-color;
-  display: flex;
   line-height: 21px;
-  padding: 1px 10px;
   text-decoration: none;
   transition: all ease-out 0.15s;
 
   &:hover,
   &:focus {
-    background-color: $grey-color;
     border-color: $grey-color;
+    background-color: $grey-color;
     outline: none;
 
     .user-nav__icon {
@@ -43,14 +44,14 @@
 }
 
 .user-nav__link--red {
-  background-color: $red-color;
   border-color: $red-color;
+  background-color: $red-color;
   color: $white;
 
   &:hover,
   &:focus {
-    background-color: $light-red-color;
     border-color: $light-red-color;
+    background-color: $light-red-color;
     color: $white;
   }
 }

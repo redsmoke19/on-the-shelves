@@ -5,4 +5,4 @@ lint:
 	npx eslint .
 
 stylelint:
-	npx stylelint "dev/static/**/*.scss"
+	npx stylelint "dev/static/styles/**/**/*.scss"

@@ -1,23 +1,20 @@
 .footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-nav__item {
-  max-width: 220px;
-
-  &:not(:last-child) {
-    margin: 0 68px 0 0;
-  }
+  display: grid;
+  grid-template-columns: 171px 171px 145px 218px;
+  gap: 20px;
 }
 
 .footer-nav__title {
-  color: $light-black-color;
-  font-family: $decor-font;
-  font-size: 24px;
-  line-height: 27px;
-  font-weight: 700;
   margin: 0 0 6px 0;
+  color: $light-black-color;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: $decor-font;
+  line-height: 27px;
+
+  &--more {
+    margin: 0 0 7px 0;
+  }
 }
 
 .footer-nav__link {
@@ -35,13 +32,13 @@
   }
 
   &[href]:focus {
-    opacity: 0.7;
     outline: none;
+    opacity: 0.7;
   }
 }
 
 .footer-nav__text {
+  margin: 0 0 5px 0;
   color: $white;
   line-height: 18px;
-  margin: 0 0 5px 0;
 }

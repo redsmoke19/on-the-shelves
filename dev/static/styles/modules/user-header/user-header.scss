@@ -1,24 +1,24 @@
 .user-header {
-  align-items: center;
   display: flex;
-  margin: -10px 0 0 auto;
-  max-width: 411px;
+  align-items: center;
   width: 100%;
+  max-width: 411px;
+  margin: -10px 0 0 auto;
 }
 
 .user-header__search {
-  display: flex;
-  margin: 0 10px 0 0;
   position: relative;
+  display: flex;
   width: 100%;
+  margin: 0 10px 0 0;
 }
 
 .user-header__search-input {
+  flex-grow: 1;
+  padding: 7px 40px 7px 12px;
   border: 0.5px solid $text-color;
   border-radius: 2px;
-  flex-grow: 1;
   line-height: 18px;
-  padding: 7px 40px 7px 12px;
 
   &::placeholder {
     color: $light-grey-color;
@@ -26,16 +26,16 @@
 }
 
 .user-header__search-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 5px;
   display: flex;
   padding: 0;
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   transition: opacity ease-out 0.15s;
+  transform: translateY(-50%);
 
   &:hover {
     opacity: 0.7;
@@ -43,12 +43,12 @@
 }
 
 .user-header__basket {
-  align-items: center;
-  background-color: $blue-color;
-  border-radius: 2px;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 5px;
+  border-radius: 2px;
+  background-color: $blue-color;
   transition: all ease-out 0.15s;
 
   &:hover {
@@ -56,7 +56,7 @@
   }
 
   &:focus {
-    opacity: 0.7;
     outline: none;
+    opacity: 0.7;
   }
 }

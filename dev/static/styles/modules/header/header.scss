@@ -3,8 +3,9 @@
 }
 
 .header__wrapper {
-  align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 24px 0 14px;
 }
 
@@ -14,6 +15,6 @@
 }
 
 .header__address {
-  line-height: 18px;
   margin: -10px 0 0 0;
+  line-height: 18px;
 }

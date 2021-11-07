@@ -3,55 +3,55 @@
 }
 
 .slider__item {
-  align-items: flex-start;
-  background-color: $orange-color;
-  border-radius: 6px;
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   overflow: hidden;
   min-height: 450px;
   padding: 22px 35px 32px;
-  position: relative;
+  border-radius: 6px;
+  background-color: $orange-color;
 
   &::before {
-    background-color: #fe872e;
     content: "";
-    height: 540px;
     position: absolute;
-    right: 143px;
     top: 39px;
+    right: 143px;
     z-index: 10;
     width: 301px;
+    height: 540px;
+    background-color: #fe872e;
     transform: rotate(-48.44deg);
   }
 }
 
 .slider__title {
-  color: $white;
-  font-family: $decor-font;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 60px;
   max-width: 495px;
   margin: 0 0 24px 0;
+  color: $white;
+  font-weight: 600;
+  font-size: 64px;
+  font-family: $decor-font;
+  line-height: 60px;
 }
 
 .slider__text {
-  color: $white;
-  line-height: 21px;
   max-width: 395px;
   margin: 0 0 20px 0;
+  color: $white;
+  line-height: 21px;
 }
 
 .slider__link {
-  color: $white;
-  background-color: $blue-color;
-  border-radius: 2px;
   display: inline-block;
-  font-size: 20px;
-  line-height: 23px;
   margin: auto 0 0 0;
   padding: 10px 24px;
+  border-radius: 2px;
+  background-color: $blue-color;
+  color: $white;
+  font-size: 20px;
+  line-height: 23px;
   text-decoration: none;
   transition: all ease-out 0.15s;
 
@@ -62,24 +62,24 @@
 
 .slider__img {
   position: absolute;
-  right: -4px;
   top: 50px;
-  transform: rotate(-27.28deg);
+  right: -4px;
   z-index: 20;
+  transform: rotate(-27.28deg);
 }
 
 .slider__bullets {
-  align-items: center;
-  bottom: 20px;
-  display: flex;
-  left: 50%;
   position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  align-items: center;
   transform: translateX(-50%);
 }
 
 .slider__bullet {
-  align-items: center;
   display: flex;
+  align-items: center;
 
   &:not(:last-child) {
     margin: 0 4px 0 0;
@@ -87,34 +87,34 @@
 }
 
 .slider__bullet-button {
-  background-color: transparent;
-  border: 1px solid $white;
-  border-radius: 50%;
-  cursor: pointer;
+  position: relative;
+  width: 8px;
   height: 8px;
   padding: 0;
-  position: relative;
+  border: 1px solid $white;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
   transition: all ease-out 0.15s;
-  width: 8px;
 
   &:hover {
     transform: scale(1.3);
   }
 
   &--active {
-    height: 12px;
     width: 12px;
+    height: 12px;
 
     &::before {
-      background-color: $white;
-      border-radius: 50%;
       content: "";
-      height: 8px;
-      left: 50%;
       position: absolute;
       top: 50%;
-      transform: translate(-50%, -50%);
+      left: 50%;
       width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $white;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -124,28 +124,28 @@
 }
 
 .slider__arrows {
-  height: 28px;
   position: absolute;
   top: 50%;
-  transform: translateY(-86%);
-  width: 100%;
   z-index: 50;
+  width: 100%;
+  height: 28px;
+  transform: translateY(-86%);
 }
 
 .slider__arrow-button {
+  position: absolute;
+  display: flex;
   align-items: center;
-  background-color: $white;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
   border: none;
   border-radius: 50%;
+  background-color: $white;
   box-shadow: 0 0 10px rgba(57, 113, 255, 0.2);
   cursor: pointer;
-  display: flex;
-  height: 28px;
-  justify-content: center;
-  padding: 0;
-  position: absolute;
   transition: all ease-out 0.15s;
-  width: 28px;
 
   &:hover {
     box-shadow: 0 0 15px rgba(57, 113, 255, 0.3);

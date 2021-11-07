@@ -1,6 +1,6 @@
 .catalog-books {
-  flex: 0 0 77.38%;
   position: relative;
+  flex: 0 0 77.38%;
 }
 
 .catalog-books .books {
@@ -20,8 +20,8 @@
 }
 
 .catalog-books .books__stars {
-  left: 4px;
   top: 5px;
+  left: 4px;
 }
 
 .catalog-books__sort {
@@ -36,14 +36,14 @@
 }
 
 .catalog-books__select {
-  appearance: none;
-  background: transparent url("../images/common/arrow.svg") no-repeat right center;
-  border: none;
-  color: $blue-color;
-  cursor: pointer;
-  line-height: 21px;
-  outline: none;
   padding: 0 15px 0 7px;
+  border: none;
+  background: transparent url("../images/common/arrow.svg") no-repeat right center;
+  color: $blue-color;
+  outline: none;
+  line-height: 21px;
+  cursor: pointer;
+  appearance: none;
 
   &:focus-within {
     opacity: 0.7;

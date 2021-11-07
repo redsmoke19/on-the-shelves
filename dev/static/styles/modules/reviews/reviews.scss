@@ -15,37 +15,37 @@
 }
 
 .reviews__wrapper {
-  background-color: $white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
   padding: 20px 25px 24px 20px;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .reviews__info {
-  align-items: center;
   display: flex;
+  align-items: center;
   margin: 0 0 10px 0;
 }
 
 .reviews__box-images {
-  border-radius: 50%;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .reviews__img {
   align-self: baseline;
-  height: 80px;
   object-fit: cover;
-  margin: 0 15px 0 0;
   width: 80px;
+  height: 80px;
+  margin: 0 15px 0 0;
 }
 
 .reviews__name {
   color: $blue-color;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 28px;
 }
 
